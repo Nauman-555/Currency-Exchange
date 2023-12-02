@@ -1,0 +1,32 @@
+*{
+    text-align: center;
+}
+input{
+  width: 150px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.but{
+    background-color: #58cc02;
+    color: white;
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    /* margin-left: 30px; */
+    /* margin-top: 50px; */
+    font-weight: bold;
+    font-size:larger;
+    border: 2px solid rgb(112, 92, 92);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .but:hover{
+    background-color: white;
+    color: #58cc02;
+    border: 2px solid rgb(83, 247, 83);
+  }
