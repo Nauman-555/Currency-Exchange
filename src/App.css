@@ -5,10 +5,15 @@ input{
   width: 150px;
   padding: 10px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-left: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+.fan{
+  margin-left: -20px;
+  margin-top: 100px;
 }
 .but{
     background-color: #58cc02;
@@ -17,16 +22,36 @@ input{
     width: 200px;
     padding: 15px 0;
     text-align: center;
-    /* margin-left: 30px; */
+    margin-left: 30px;
     /* margin-top: 50px; */
     font-weight: bold;
     font-size:larger;
     border: 2px solid rgb(112, 92, 92);
     cursor: pointer;
     border-radius: 10px;
+    margin-top: 80px;
   }
   .but:hover{
     background-color: white;
     color: #58cc02;
     border: 2px solid rgb(83, 247, 83);
+  }
+  b{
+    margin-left: 25px;
+  }
+  label{
+    margin-left: 20px;
+  }
+  select{
+    width: 150px;
+    padding: 10px;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  h2{
+    margin-left: 20px;
   }
