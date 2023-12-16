@@ -5,53 +5,102 @@ input{
   width: 150px;
   padding: 10px;
   margin-top: 50px;
-  /* margin-bottom: 50px; */
-  margin-left: 30px;
+  margin-left: 110px;
+  /* margin-bottom: 100px; */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  color:  rgb(241, 246, 244);
+  font-size: 15px;
+  background-color: rgb(46, 60, 42);
 }
 .fan{
-  margin-left: -20px;
-  margin-top: 100px;
+  margin-left: -70px;
+  margin-top: 80px;
 }
 .but{
-    background-color: #58cc02;
-    color: white;
+
+    background-color:  rgb(73, 245, 188);
+    color: rgb(8, 8, 8);
     position: relative;
     width: 200px;
     padding: 15px 0;
     text-align: center;
-    margin-left: 30px;
-    /* margin-top: 50px; */
+    margin-left: 110px;
     font-weight: bold;
     font-size:larger;
     border: 2px solid rgb(112, 92, 92);
     cursor: pointer;
     border-radius: 10px;
-    margin-top: 80px;
+    margin-top: 50px;
+    font-size: 20px;
   }
   .but:hover{
-    background-color: white;
-    color: #58cc02;
-    border: 2px solid rgb(83, 247, 83);
+    background-color: rgb(8, 8, 8);
+    color:  rgb(73, 245, 188);
+    border: 2px solid rgb(79, 75, 75);
   }
   b{
     margin-left: 25px;
   }
   label{
     margin-left: 20px;
+    color:  rgb(243, 247, 246);
+    font-size: 30px;
+    margin-bottom: -1000px;
   }
   select{
-    width: 150px;
+    width: 140px;
     padding: 10px;
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
     margin-left: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
+    color: rgb(234, 243, 236);
+    background-color: rgb(46, 60, 42);
+    font-size: 15px;
   }
   h2{
-    margin-left: 20px;
+    margin-left: 140px;
+    color: white;
   }
+  body{
+    background-image: url('cur.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .hed{
+    color: rgb(187, 244, 225);
+    font-size: 100px
+  }
+  p{
+    font-size: 17px;
+    color: #ccc;
+  }
+  .result{
+    margin-top: 20px;
+    margin-left: 708px;
+    border: 2px solid white;
+    background-color: rgb(86, 58, 6);
+    border-radius: 5px;
+    width: 300px;
+  }
+  .bol{
+    background: transparent;
+    color: aliceblue;
+    margin-left: 1200px;
+    margin-top: 100px;
+  }
+  /* .code{
+    margin-left: 1300px;
+    margin-top: -450px;
+    position: fixed;
+  }
+  .node{
+    margin-right: 1300px;
+    margin-top: -450px;
+  } */
