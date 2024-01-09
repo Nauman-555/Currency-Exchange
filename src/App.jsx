@@ -6,6 +6,8 @@ const App = () => {
   const [amount, setAmount] = useState("");
   const [base, setBase] = useState("");
   const [target, setTarget] = useState("");
+  // const [current, setCurrent] = useState(false);
+  // const [sam, setSam] = useState("Check it!");
 
   const handleOptionChange = (event) => {
     setBase(event.target.value);
@@ -20,6 +22,10 @@ const App = () => {
   const handleAmountChange = (event) => {
     setAmount(event.target.value);
   };
+  // const handleCurrencyChange = () =>{
+  //   setCurrent(true);
+  //   setSam(false);
+  // }
   const handleClickConvert = () => {
     if (base && target && amount) {
       setRate(null);
@@ -51,9 +57,8 @@ const App = () => {
   return (
     <div>
       <h1 className="hed">Currency Exchange Rates</h1>
-      
       <div className="fan">
-        <div>
+        <div className="abc">
           <label htmlFor="selectBase">Source:</label>
           <select id="selectBase" value={base} onChange={handleOptionChange}>
             <option value="">Select...</option>
@@ -156,87 +161,35 @@ const App = () => {
           </select>
         </div>
         <br></br>
-        {/* <button className="bol">Click to See Currency Codes!</button> */}
-        <input
-          type="number"
-          value={amount}
-          placeholder="  Enter amount"
-          onChange={handleAmountChange}
-        />
-        <br />
-        <button className="but" onClick={handleClickConvert}>
-          Convert
-        </button>
-        {rate && typeof rate === "object" && base && target && amount ? (
-          <div className="result">
-            <p>
-              Source Currency = {base} <br />
-            </p>
-            <p>
-              {" "}
-              Target Currency = {target} <br />
-            </p>
-            <p>
-              Exchange_Rate = {calculateConvertedAmount()}
-              <br />
-            </p>
-          </div>
-        ) : null}
+        <div className="fall">
+          <input
+            type="number"
+            value={amount}
+            placeholder="  Enter amount"
+            onChange={handleAmountChange}
+          />
+          <br />
+          <button className="but" onClick={handleClickConvert}>
+            Convert
+          </button>
+          {rate && typeof rate === "object" && base && target && amount ? (
+            <button className="result">
+              <p>
+                Source Currency = {base} <br />
+              </p>
+              <p>
+                {" "}
+                Target Currency = {target} <br />
+              </p>
+              <p>
+                Exchange_Rate = {calculateConvertedAmount()}
+                <br />
+              </p>
+            </button>
+          ) : null}
+        </div>
       </div>
-      {/* <button className="bol">Click to See Currency Codes!</button> */}
-      {/* <div className="code">
-      <p>
-    'ARS': 'Argentina' <br />
-    'AUD': 'Australia' <br />
-    'BCH': 'Bitcoin Cash' <br />
-    'BGN': 'Bulgaria' <br />
-    'BNB': 'Bahrain' <br />
-    'BRL': 'Brazil' <br />
-    'BTC': 'Bitcoin'<br />
-    'CAD': 'Canada' <br />
-    'CHF': 'Switzerland' <br />
-    'CNY': 'China' <br />
-    'CZK': 'Czech Republic' <br />
-    'DKK': 'Denmark' <br />
-    'DOGE': 'Dogecoin' <br />
-    'DZD': 'Algeria' <br />
-    'ETH': 'Estonia' <br />
-    'EUR': 'Eurozone' <br />
-    'GBP': 'United Kingdom' <br />
-    'HKD': 'Hong Kong' <br />
-    'HRK': 'Croatia' <br />
-    'HUF': 'Hungary' <br />
-    'IDR': 'Indonesia' <br />
-    'ILS': 'Israel' <br /> 
-    </p>
     </div>
-    <div className="node">
-    <p>
-    'INR': 'India' <br />
-    'ISK': 'Iceland' <br />
-    'JPY': 'Japan' <br />
-    'KRW': 'South Korea' <br />
-    'LTC': 'Litecoin' <br />
-    'MAD': 'Morocco' <br />
-    'MXN': 'Mexico' <br />
-    'MYR': 'Malaysia' <br />
-    'NOK': 'Norway' <br />
-    'NZD': 'New Zealand' <br />
-    'PHP': 'Philippines' <br />
-    'PLN': 'Poland' <br />
-    'RON': 'Romania' <br />
-    'RUB': 'Russia' <br />
-    'SEK': 'Sweden' <br />
-    'SGD': 'Singapore' <br />
-    'THB': 'Thailand' <br />
-    'TRY': 'Turkey' <br />
-    'TWD': 'Taiwan' <br />
-    'XRP': 'Ripple' <br />
-    'ZAR': 'South Africa' <br />
-    'USD': 'United States' <br />
-    </p>
-    </div> */}
-    </div>
-);
+  );
 };
 export default App;
